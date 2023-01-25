@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+$myfont: 'Raleway', sans-serif;   
+$pale: hsl(243, 100%, 93%);
+$grayish: hsl(229, 7%, 55%);
+$dark: hsl(228, 56%, 26%);
+$verydark: hsl(229, 57%, 11%);
+$gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    html{
+        height: 100%;
+    }
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        color: white;
+    }
+    body
+    {
+        background-image: url(./images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-color: $verydark;
+        background-position: bottom;
+        background-size:100% auto;
+        
+    }
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .first-box{
+        width: 300px;
+        height: 170px;
+        background-color: $dark;
+        margin-right: 25px;
+        margin-bottom: 120px;
+        border-radius: 10px 85px 10px 10px;
+    }
+    .second-box{
+        width: 500px;
+        height: 120px;
+        background-color: $dark;
+        margin-bottom: 70px;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .logo{ 
+        img {
+            padding: 30px 0px 25px 30px;
+            width: 50%;
+        }
+    }
+    .icons{
+        padding-left: 30px;
+        display: flex;
+        flex-direction: row;
+    
+        .icon{
+            background-color: hsl(229, 57%, 11%);
+            height: 44px;
+            width: 44px;
+        }
+        div {
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+    }
+    p{
+        font-family: $myfont;
+        font-weight: 400;
+        font-size: 0.9rem;
+        padding: 30px 0px 0px 30px;
+        opacity: 0.9;
+        margin-bottom: 10px;
+    }
+    .info{
+        width: 150px;
+        height: 60px;
+        background-color: white;
+        margin-left: 300px;
+        margin-top: -85px;
+       border-radius: 10px 10px 0px 10px;
+       color: $verydark;
+    }
+    .info{
+        span:nth-of-type(1){
+            font-family: $myfont;
+            font-size: 2rem;
+            font-weight: 700;
+            color: $verydark;
+            position: relative;
+            top: 15%;
+            left: 10%;
+    
+            
+        }
+        span:nth-of-type(2){
+            position: relative;
+            font-family: $myfont;
+            font-size: 0.7rem;
+            color: $grayish;
+            font-weight: 700;
+            top: 10%;   
+            left: 10%;
+
+        }
+    }
+    .triangle {
+    position:absolute;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 50px;
+    height: 20px;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #ffffff transparent transparent;
+    }
+    .bar {
+        position: relative;
+        width: 85%;
+        height: 13px;
+        background: $verydark;
+        border-radius: 10px;
+        margin-left: 30px;
+        margin-top: 30px;
+       
+    }
+    .progress {
+        position: absolute;
+        width: 75%;
+        height: 13px;
+        background: $gradient;
+        border-radius: 10px;
+    }
+    .circle {
+        position: absolute;
+        margin-top: 1px;
+        right: 0;
+        width: 3%;
+        height: 10px;
+        background: white;
+        border-radius: 500px;
+    }
+.info2 {
+    
+        font-family: $myfont;
+        font-weight: 400;
+        font-size: 0.8rem;
+        opacity: 0.9;
+        margin-left: 30px;
+        margin-top: 10px;
+        span:last-of-type{
+           margin-left: 330px;
+        }
+   
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width:575px) {
+    body
+    {
+        background-image: url(./images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-color: $verydark;
+        background-size: 100vh 100vh;
+        
+    }
+.container {
+    flex-direction: column;
+}
+.first-box{
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
+.second-box{
+    width: 300px;
+    height: 175px;
+    background-color: $dark;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 10px 10px;
+    .info2 {
+        span:last-of-type{
+            margin-left: 170px;
+         }
+    
+    }
+}
+.circle {
+    position: absolute;
+    margin-top: 1px;
+    width: 5%;
+    height: 10px;
+    background: white;
+    border-radius: 500px;
+}
+.info{
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    margin-left: 75px;
+    margin-top: 80px;
+   border-radius: 10px;
+   color: $verydark;
+}
+.triangle {
+   display: none;
+
+}}
